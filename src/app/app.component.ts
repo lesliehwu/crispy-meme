@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'SWITCHY';
+    switches=[true,false,true,false,true,false];
+    flipSwitch(x){
+        this.switches[x]=!this.switches[x];
+    }
 }
